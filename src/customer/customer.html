@@ -1,0 +1,14 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="customer-style.html">
+<dom-module id="adesso-customer">
+    <template>
+        <style include="adesso-customer-style">
+        </style>
+        <slot></slot>
+        <div>{{message}}</div>
+        <div>Greetings: {{greetings}}</div>
+        <input value="{{customername::input}}">
+        <button on-click="clickCustomer">create</button>
+    </template>
+    <script src="customer.js"></script>
+</dom-module>
