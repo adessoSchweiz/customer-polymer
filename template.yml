@@ -108,7 +108,7 @@ objects:
                   }
                   stage("IntegrationTest") {
                     def npmHome = tool 'NPM'
-                    git url: "https://github.com/robertBrem/customer-polymer-st", branch: "master"
+                    git url: "https://github.com/adessoSchweiz/customer-polymer-st", branch: "master"
                     sh "npm install"
                     sh "${npmHome}/node_modules/nightwatch/bin/nightwatch it"
                     junit allowEmptyResults: true, testResults: '**/reports/*.xml'
