@@ -1,4 +1,4 @@
 {
-  "host": "localhost",
-  "rest_port": 8082
+  "host": "customer-java-rest",
+  "rest_port": 8080
 }
