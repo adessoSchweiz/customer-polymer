@@ -4,7 +4,7 @@ class Customer extends Polymer.Element {
         super();
         this.getCustomers()
             .then(customers => {
-                this.greetings = "Hello, it seems to work";
+                this.greetings = "Hello Planzer, it seems to work";
                 for (const customer of customers) {
                     this.greetings += `, ${customer.name}`;
                 }
